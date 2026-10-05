@@ -1,2 +1,2 @@
 # shop-co
-this is my petprojects 1
+this is my petproject 1
