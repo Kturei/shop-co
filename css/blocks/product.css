@@ -1,0 +1,121 @@
+.product {
+  padding-block: clamp(1.875rem, -1.273rem + 14.81vw, 9.375rem);
+}
+
+.product__grid {
+  display: grid;
+}
+
+@media (width > 768px) {
+  .product__grid {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    gap: 20px;
+  }
+}
+@media (width <= 768px) {
+  .product__grid {
+    grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
+    gap: 20px;
+  }
+}
+@media (width <= 390px) {
+  .product__grid {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 10px;
+  }
+}
+
+.product__grid-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  box-shadow:
+    0 4px 41px 0 rgba(0, 0, 0, 0.05),
+    0 4px 41px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+
+  transition: var(--transition);
+}
+
+@media (any-hover: hover) {
+  .product__grid-card:hover {
+    color: var(--bg-color);
+    border-radius: 0 0 10px 10px;
+  }
+  .product__grid-card:hover .product__grid-card-content {
+    background-color: var(--main-color);
+  }
+}
+
+.product__grid-card-img-wrapper {
+  border-radius: 10px;
+}
+.product__grid-card-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product__grid-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  max-height: 130px;
+
+  transition: var(--transition);
+}
+
+@media (width > 768px) {
+  .product__grid-card-content {
+    padding: 30px 40px;
+  }
+}
+@media (width <= 768px) {
+  .product__grid-card-content {
+    padding: 15px 12px;
+  }
+}
+@media (width <= 390px) {
+  .product__grid-card-content {
+    padding: 16px 12px;
+  }
+}
+
+@media (width > 768px) {
+  .product__grid-card-title {
+    font-size: 30px;
+  }
+  .product__grid-card-sub {
+    font-size: 24px;
+    gap: 10px;
+  }
+}
+@media (width <= 768px) {
+  .product__grid-card-title {
+    font-size: 16px;
+  }
+  .product__grid-card-sub {
+    font-size: 12px;
+    gap: 4px;
+  }
+}
+@media (width <= 390px) {
+  .product__grid-card-title {
+    font-size: 13px;
+  }
+  .product__grid-card-sub {
+    font-size: 11px;
+    gap: 6px;
+  }
+}
+
+.product__grid-card-sub {
+  display: flex;
+  justify-content: center;
+}
+
+.product__grid-card-sub-arrow {
+  stroke: currentColor;
+}

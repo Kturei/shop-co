@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="burger" viewBox="0 0 50 50" fill="none">
+    <path 
+      d="M10.4167 14.582H39.5834M10.4167 25H39.5834M10.4167 35.416H39.5834" 
+      stroke="currentColor" 
+      stroke-width="2.58934" 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+    />
+  </symbol>
+  <symbol id="cross" viewBox="0 0 50 50" fill="none">  
+    <!-- Основные линии -->
+    <path d="M11 15L39 35" 
+          stroke="currentColor" 
+          stroke-width="2.5" 
+          stroke-linecap="round"/>
+    <path d="M11 35L39 15" 
+          stroke="currentColor" 
+          stroke-width="2.5" 
+          stroke-linecap="round"/>
+  </symbol>
+  
+  <symbol id="cart" viewBox="0 0 36 36" fill="none">
+    <path 
+      d="M4.5 13.5C4.5 11.8431 5.84314 10.5 7.5 10.5H28.5C30.1569 10.5 31.5 11.8431 31.5 13.5V30C31.5 31.6569 30.1569 33 28.5 33H7.5C5.84314 33 4.5 31.6569 4.5 30V13.5Z" 
+      stroke="currentColor" 
+      stroke-width="2" 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+    />
+    <path 
+      d="M12 15V9C12 5.68629 14.6863 3 18 3C21.3137 3 24 5.68629 24 9V14.5332" 
+      stroke="currentColor" 
+      stroke-width="2" 
+      stroke-linecap="round" 
+      stroke-linejoin="round" 
+    />
+  </symbol>
+  
+  <symbol id="arrow" viewBox="0 0 28 25" fill="none">
+    <path 
+      fill-rule="evenodd" 
+      clip-rule="evenodd" 
+      d="M24.9974 13.0109L0.806042 12.8057C0.353791 12.8018 -0.0083874 12.4296 0.000107033 11.9774C0.0084787 11.5318 0.374125 11.176 0.819838 11.1798L25.1461 11.3862L15.8103 1.37472C15.5024 1.04457 15.5205 0.527345 15.8506 0.219473C16.1808 -0.0883981 16.698 -0.0703352 17.0059 0.259817L27.5044 11.5181C27.881 11.922 27.8589 12.5548 27.455 12.9314L15.5336 24.0483C15.2069 24.3531 14.6949 24.3352 14.3902 24.0084C14.0855 23.6816 14.1034 23.1697 14.4302 22.865L24.9974 13.0109Z" 
+      fill="currentColor" 
+    />
+  </symbol>
+</svg>

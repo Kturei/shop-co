@@ -1,0 +1,138 @@
+.news__grid {
+  display: grid;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+@media (width > 768px) {
+  .news__grid {
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    gap: 20px;
+  }
+}
+@media (width <= 768px) {
+  .news__grid {
+    grid-template-columns: repeat(auto-fit, minmax(196px, 1fr));
+    gap: 20px;
+  }
+}
+@media (width <= 456px) {
+  .news__grid {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 10px;
+  }
+  .news__item:last-child {
+    display: none;
+  }
+}
+
+.news__item {
+  max-width: 440px;
+}
+
+.news__item-title {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.news__item-text {
+  font-weight: 300;
+  color: var(--second-color);
+}
+
+@media (width > 768px) {
+  .news__grid {
+    margin-bottom: 80px;
+  }
+
+  .news__title {
+    margin-bottom: 70px;
+  }
+  .news-item-image {
+    margin-bottom: 30px;
+  }
+  .news__item-date {
+    margin-bottom: 20px;
+  }
+  .news__item-title {
+    margin-bottom: 15px;
+  }
+
+  .news__item-text {
+    margin-bottom: 20px;
+  }
+}
+@media (width <= 768px) {
+  .news__grid {
+    margin-bottom: 20px;
+  }
+
+  .news__title {
+    margin-bottom: 30px;
+  }
+  .news-item-image {
+    margin-bottom: 12px;
+  }
+  .news__item-date {
+    margin-bottom: 10px;
+  }
+  .news__item-title {
+    margin-bottom: 6px;
+  }
+
+  .news__item-text {
+    margin-bottom: 10px;
+  }
+}
+@media (width <= 456px) {
+  .news__grid {
+    margin-bottom: 34px;
+  }
+
+  .news-item-image {
+    margin-bottom: 10px;
+  }
+  .news__item-date {
+    margin-bottom: 6px;
+  }
+  .news__item-title {
+    margin-bottom: 6px;
+  }
+
+  .news__item-text {
+    margin-bottom: 6px;
+  }
+}
+
+@media (width > 768px) {
+  .news__item-title {
+    font-size: 20px;
+  }
+
+  .news__item-text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+@media (width <= 768px) {
+  .news__item-title {
+    font-size: 14px;
+  }
+
+  .news__item-text {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
+@media (width <= 456px) {
+  .news__item-title {
+    font-size: 12px;
+  }
+
+  .news__item-text {
+    font-size: 10px;
+  }
+}
+
+@media (width <= 456px) {
+}

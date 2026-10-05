@@ -1,0 +1,22 @@
+/* base */
+@import "./base/reset.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/globals.css";
+
+/* blocks */
+@import "./blocks/header.css";
+@import "./blocks/burger.css";
+@import "./blocks/menu.css";
+@import "./blocks/hero.css";
+@import "./blocks/product.css";
+@import "./blocks/vector.css";
+@import "./blocks/expert.css";
+@import "./blocks/why.css";
+@import "./blocks/special.css";
+@import "./blocks/dropdown.css";
+@import "./blocks/reviews.css";
+@import "./blocks/faq.css";
+@import "./blocks/news.css";
+@import "./blocks/form.css";
+@import "./blocks/footer.css";

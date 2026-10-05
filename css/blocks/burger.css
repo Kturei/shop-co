@@ -1,0 +1,48 @@
+.header__button-burger {
+  position: relative;
+  z-index: var(--layer-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Иконки */
+.burger__icon-cross {
+  display: none;
+}
+
+.burger__icon-menu,
+.burger__icon-cross {
+  stroke: currentColor;
+}
+
+/* Когда кнопка активна (меню открыто) */
+.header__button-burger.active .burger__icon-cross {
+  display: block;
+}
+
+.header__button-burger.active .burger__icon-menu {
+  display: none;
+}
+
+@media (width <= 1250px) {
+  .header__button-burger {
+    margin-right: clamp(25px, 0.818rem + 0.91vw, 40px);
+  }
+
+  .header__button-burger.active {
+    position: fixed;
+    z-index: var(--layer-3);
+  }
+}
+
+.header__button-burger {
+  transition: var(--transition);
+  color: var(--bg-color);
+}
+
+@media (any-hover: hover) {
+  .header__button-burger:hover {
+    color: var(--accent-color);
+  }
+}

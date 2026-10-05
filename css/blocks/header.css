@@ -1,0 +1,39 @@
+.header {
+  background: var(--second-color);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+@media (width > 1250px) {
+  .header__container {
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+
+@media (width <= 1250px) {
+  .header__menu {
+    /* display: none; */
+  }
+  .header__actions {
+    margin-left: auto;
+  }
+}
+
+.header__actions-button {
+  transition: var(--transition);
+  color: var(--bg-color);
+}
+
+@media (any-hover: hover) {
+  .header__actions-button:hover {
+    color: var(--accent-color);
+  }
+}
+
+.header__actions-icon {
+  stroke: currentColor;
+}

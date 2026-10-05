@@ -1,0 +1,262 @@
+.reviews__send {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ababab;
+}
+
+@media (width > 768px) {
+  .reviews__send {
+    padding-block: 20px 50px;
+    gap: 70px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__send {
+    padding-block: 20px;
+    justify-content: space-between;
+  }
+}
+
+.reviews__send-stars {
+  font-family: var(--font-family);
+  font-weight: 500;
+  color: #111;
+}
+
+.reviews__send-stars-accent {
+  font-weight: 400;
+}
+
+@media (width > 768px) {
+  .reviews__send-stars {
+    font-size: 30px;
+  }
+  .reviews__send-stars-accent {
+    font-size: 20px;
+  }
+  .reviews__stars {
+    width: 161px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__send-stars {
+    font-size: 16px;
+  }
+  .reviews__send-stars-accent {
+    font-size: 12px;
+  }
+  .reviews__stars {
+    width: 60px;
+  }
+}
+@media (width <= 456px) {
+  .reviews__stars {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+}
+
+.reviews__button {
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
+}
+
+@media (width > 768px) {
+  .reviews__button {
+    font-size: 24px;
+    padding: 10px 41px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__button {
+    font-size: 16px;
+    padding: 7px 37px;
+  }
+}
+@media (width <= 456px) {
+  .reviews__button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+
+@media (width > 768px) {
+  .reviews__feedback-list {
+    margin-bottom: 80px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__feedback-list {
+    margin-bottom: 40px;
+  }
+}
+@media (width <= 456px) {
+  .reviews__feedback-list {
+    margin-bottom: 30px;
+  }
+}
+
+.reviews__feedback {
+  display: flex;
+  gap: 70px;
+  border-bottom: 1px solid #ababab;
+}
+
+@media (width > 768px) {
+  .reviews__feedback {
+    padding-block: 40px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__feedback {
+    padding-block: 20px;
+  }
+}
+
+.reviews__feedback-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__feedback-name {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media (width > 768px) {
+  .reviews__feedback-title,
+  .reviews__feedback-name {
+    font-size: 20px;
+  }
+  .reviews__feedback-title {
+    margin-bottom: 10px;
+  }
+  .reviews__feedback-name {
+    margin-bottom: 15px;
+  }
+  .feedback-text--mb {
+    margin-bottom: 30px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__feedback-title,
+  .reviews__feedback-name {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .feedback-text--mb {
+    margin-bottom: 20px;
+  }
+}
+@media (width <= 456px) {
+  .reviews__feedback-title,
+  .reviews__feedback-name {
+    font-size: 12px;
+  }
+}
+
+@media (width > 768px) {
+  .reviews__feedback-content {
+    max-width: 770px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__feedback-content {
+    max-width: 320px;
+  }
+}
+@media (width <= 456px) {
+  .reviews__feedback-content {
+    max-width: 370px;
+  }
+}
+
+.reviews__feedback-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__feedback-title {
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.reviews__feedback-text {
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.reviews__feedback-date {
+  margin-left: auto;
+}
+
+@media (width > 768px) {
+  .reviews__feedback-date,
+  .reviews__feedback-text {
+    font-size: 18px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__feedback-date,
+  .reviews__feedback-text {
+    font-size: 12px;
+  }
+}
+
+.reviews__feedback-image-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+
+@media (width > 768px) {
+  .reviews__feedback-image-list {
+    gap: 20px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__feedback-image-list {
+    gap: 10px;
+  }
+}
+
+.toggleable-image {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: var(--transition);
+}
+.toggleable-image.showing {
+  display: block !important;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reviews__feedback-image {
+  cursor: pointer;
+  border-radius: 3px;
+  transition: var(--transition);
+}
+
+@media (width > 768px) {
+  .reviews__feedback-image {
+    width: 95px;
+  }
+}
+@media (width <= 768px) {
+  .reviews__feedback-image {
+    width: 61px;
+  }
+}
+@media (width <= 456px) {
+  .reviews__feedback-image {
+    width: 80px;
+  }
+}
+
+@media (any-hover: hover) {
+  .reviews__feedback-image:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
